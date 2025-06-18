@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://bwseom1l5xygc"]
+[gd_scene load_steps=4 format=3 uid="uid://bwseom1l5xygc"]
+
+[ext_resource type="Script" uid="uid://dmcjndwwt7n6m" path="res://Code/main.gd" id="1_8gbba"]
+[ext_resource type="PackedScene" uid="uid://2m1upvbvmpts" path="res://Scenes/tower.tscn" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://ba8v6hew4u0yb" path="res://icon.svg" id="2_8gbba"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_8gbba")
+
+[node name="Tower" parent="." instance=ExtResource("1_bo1nx")]
+position = Vector2(658, 193)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(224.5, 262.5)
+scale = Vector2(4.22656, 0.320312)
+texture = ExtResource("2_8gbba")
